@@ -8,6 +8,11 @@ pipeline {
         }
         stage('Compile') {
             steps {
+                sh 'npm compile'
+            }
+        }
+        stage('package') {
+            steps {
                 sh 'npm start'
             }
         }
