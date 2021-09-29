@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Directory') {
             steps {
-                sh 'cd /home/slave1/workspace/nodejob/node-hello/'
+                sh 'cd /home/slave1/workspace/nodejob/node-hello'
             }
         }
         stage('Compile') {
