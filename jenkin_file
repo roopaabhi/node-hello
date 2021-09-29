@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Directory') {
             steps {
-                sh 'cd /home/slave1/workspace/nodejob/node-hello'
+                sh 'git clone https://github.com/roopaabhi/node-hello'
             }
         }
         stage('Compile') {
